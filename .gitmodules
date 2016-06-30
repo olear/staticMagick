@@ -10,3 +10,6 @@
 [submodule "magick"]
 	path = magick
 	url = https://github.com/ImageMagick/ImageMagick
+[submodule "libtiff"]
+	path = libtiff
+	url = https://github.com/vadz/libtiff
