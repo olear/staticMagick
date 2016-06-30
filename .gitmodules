@@ -1,0 +1,12 @@
+[submodule "libpng"]
+	path = libpng
+	url = https://github.com/glennrp/libpng
+[submodule "libjpeg"]
+	path = libjpeg
+	url = https://github.com/libjpeg-turbo/libjpeg-turbo
+[submodule "lcms"]
+	path = lcms
+	url = https://github.com/ImageMagick/lcms
+[submodule "magick"]
+	path = magick
+	url = https://github.com/ImageMagick/ImageMagick
