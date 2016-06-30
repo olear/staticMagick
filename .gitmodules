@@ -13,3 +13,6 @@
 [submodule "libtiff"]
 	path = libtiff
 	url = https://github.com/vadz/libtiff
+[submodule "zlib"]
+	path = zlib
+	url = https://github.com/madler/zlib
