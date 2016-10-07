@@ -9,12 +9,12 @@ rm -rf $INSTALL_PATH $TMP_PATH || true
 mkdir -p $TMP_PATH $INSTALL_PATH || exit 1
 export PKG_CONFIG_PATH=$INSTALL_PATH/lib/pkgconfig
 
-#cd $CWD/zlib || exit 1
-#make distclean
-#env CFLAGS="$BF" CXXFLAGS="$BF" CPPFLAGS="-I${INSTALL_PATH}/include" LDFLAGS="-L${INSTALL_PATH}/lib" ./configure --prefix=$INSTALL_PATH --libdir=$INSTALL_PATH/lib || exit 1
-#make -j${MKJOBS} || exit 1
-#make install || exit 1
-#rm -f $INSTALL_PATH/lib/libz*.so*
+cd $CWD/zlib || exit 1
+make distclean
+env CFLAGS="$BF" CXXFLAGS="$BF" CPPFLAGS="-I${INSTALL_PATH}/include" LDFLAGS="-L${INSTALL_PATH}/lib" ./configure --prefix=$INSTALL_PATH --libdir=$INSTALL_PATH/lib || exit 1
+make -j${MKJOBS} || exit 1
+make install || exit 1
+rm -f $INSTALL_PATH/lib/libz*.so* $INSTALL_PATH/lib/libz*.dy*
 
 cd $CWD/libpng || exit 1
 autoreconf -fi
